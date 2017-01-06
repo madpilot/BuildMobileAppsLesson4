@@ -30,7 +30,7 @@ function displayPhotos(photos) {
 function fetchLocation(lat, lng) {
   var url = "https://api.foursquare.com/v2/venues/search?", 
   location = "&ll=" + lat + "," + lng, 
-  secrets = "&client_id=LUOAE4CT1NYESLQF02IQ4DFNBSICP4ISQ3ZUXXFQDMMQEHAN&client_secret=2I2WF11JDE2GPDULFN5XVUZJN522RK2BHZJ03CCDSNYDSYRZ";
+  secrets = "&oauth_token=[insertoauthtoken]&v=20170106";
 
   $.ajax({
     url: url + location + secrets + "&callback=",
